@@ -6,10 +6,6 @@ import java.io.Serializable;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
-@org.hibernate.annotations.NamedQuery(
-        name = "Film_Count",
-        query = "select count(*) from Film"
-)
 @Entity
 @Table(name = "film", schema = "movie")
 public class Film implements Serializable {
