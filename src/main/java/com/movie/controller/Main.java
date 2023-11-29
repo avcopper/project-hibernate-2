@@ -111,6 +111,7 @@ public class Main {
         film.setReplacementCost(24.99f);
         film.setLanguage(new LanguageDAO().getById(1));
         film.setOriginalLanguage(new LanguageDAO().getById(2));
+        film.setRating("1");
         film.setLastUpdate(LocalDateTime.now());
         film.setActors(getFilmActors());
         film.setCategories(getFilmCategories());
